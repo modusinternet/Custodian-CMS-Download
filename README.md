@@ -8,7 +8,7 @@ Some of the code for this utility comes from Marko Marković's project the [Simp
 The CCMS Download script is a single template designed to help test your server environment and download the latest version of the CCMS repo easily. It saves you the trouble of downloading the compressed files or running composer and installing them yourself by hand.
 
 ## System Requirements
-* PHP v5.6+
+* `PHP v5.6+`
 * `git` and `rsync` are required on the server that's running the script.
 	- Optionally: `tar` is required for backup functionality (`BACKUP_DIR` option).
 	- Optionally: `composer` is required for composer functionality (`USE_COMPOSER` option).
