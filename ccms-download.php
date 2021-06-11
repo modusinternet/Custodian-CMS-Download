@@ -15,7 +15,7 @@ Automatically download and deploy the templates for CCMS using PHP and Git.
 
 /*
 Protect the script from unauthorized access by using the secret access token (SAT) below. If it is not found in your URL as a GET variable named `sat` the script will not run.
-ie: https://example.com/?sat=ChangeThisStringToSomethingElse
+ie: https://example.com/ccms-download.php?sat=ChangeThisStringToSomethingElse
 @var: string
 @default: define('SECRET_ACCESS_TOKEN', 'ChangeThisStringToSomethingElse');
 */
@@ -353,7 +353,7 @@ header("Pragma: no-cache");
 <? if(!isset($_GET["sat"])): ?>
 			<h1 class="red">ACCESS DENIED!</h1>
 			<p>There was no <span class="oj">SECRET_ACCESS_TOKEN</span> (sat) argument found in your URI.<br>
-			ie: <a class="oj" href="https://<?=$_SERVER['HTTP_HOST'];?>/ccms-install.php?sat=YourSATString">https://<?=$_SERVER['HTTP_HOST'];?>/ccms-install.php?sat=YourSATString</a><br>
+			ie: <a class="oj" href="https://<?=$_SERVER['HTTP_HOST'];?>/ccms-download.php?sat=YourSATString">https://<?=$_SERVER['HTTP_HOST'];?>/ccms-download.php?sat=YourSATString</a><br>
 			<br>
 			Note: If you have already installed Custodian CMS and just want to see your templates, you need to make sure you have either <span class="oj">rename or remove</span> the /ccms-install.php template from the <span class="oj">TARGET_DIR</span> of your server first.</p>
 <? elseif(SECRET_ACCESS_TOKEN === "ChangeThisStringToSomethingElse"): ?>
