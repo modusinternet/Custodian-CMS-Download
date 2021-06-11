@@ -355,7 +355,7 @@ header("Pragma: no-cache");
 			<p>There was no <span class="oj">SECRET_ACCESS_TOKEN</span> (sat) argument found in your URI.<br>
 			ie: <a class="oj" href="https://<?=$_SERVER['HTTP_HOST'];?>/ccms-download.php?sat=YourSATString">https://<?=$_SERVER['HTTP_HOST'];?>/ccms-download.php?sat=YourSATString</a><br>
 			<br>
-			Note: If you have already installed Custodian CMS and just want to see your templates, you need to make sure you have either <span class="oj">rename or remove</span> the /ccms-install.php template from the <span class="oj">TARGET_DIR</span> of your server first.</p>
+			Note: If you have already installed Custodian CMS and just want to see your templates, you need to make sure you have either <span class="oj">rename or remove</span> the /ccms-download.php template from the <span class="oj">TARGET_DIR</span> of your server first.</p>
 <? elseif(SECRET_ACCESS_TOKEN === "ChangeThisStringToSomethingElse"): ?>
 			<h1 class="red">ACCESS DENIED!</h1>
 			<p>Change the <span class="oj">SECRET_ACCESS_TOKEN</span> value in this template from '<span class="oj">ChangeThisStringToSomethingElse</span>' and try again.</p>
