@@ -238,7 +238,6 @@ header("Pragma: no-cache");
 				color:#337ab7;
 				cursor:pointer;
 				float:left;
-				font-size:17px;
 				margin-right:2px;
 				outline:none;
 				padding:14px 16px;
