@@ -19,7 +19,7 @@ ie: https://example.com/ccms-download.php?sat=ChangeThisStringToSomethingElse
 @var: string
 @default: define('SECRET_ACCESS_TOKEN', 'ChangeThisStringToSomethingElse');
 */
-define('SECRET_ACCESS_TOKEN', 'asdf');
+define('SECRET_ACCESS_TOKEN', 'ChangeThisStringToSomethingElse');
 
 /*
 The address of the remote Git repository that contains the code that you wish to install. If the repository is private, you'll need to use the SSH address.
