@@ -15,10 +15,8 @@ The CCMS Download script is a single template designed to help test your server 
 * System user running PHP (IE: `www-data`) needs to have the necessary access permissions to the `TMP_DIR` and `TARGET_DIR` locations.
 
 ## Instructions
-Download a copy of the `ccms-download.php` template to the folder on your server you want to install CCMS, make changes to any #define variables your require and don't forget to change the `SECRET_ACCESS_TOKEN` (SAT) variable to something only you know and call it from your browser. IE:
-https://example.com/?sat=YourSATString
-
-Note: If you have already installed CCMS and just want to see your templates, you need to make sure you have either rename or remove the `ccms-downlaod.php` template from the `TARGET_DIR` of your server first.
+Download a copy of the `ccms-download.php` template to the folder on your server you want to install CCMS, make changes to any #define variables required and change the `SECRET_ACCESS_TOKEN` (SAT) variable to something only you know and call it from your browser. IE:
+https://example.com/ccms-download.php?sat=YourSATString
 
 ## Gotchas
 Calling `ccms-download.php` without the SAT variable, forgetting to update it to something other than the default or mistyping it in your URI will result in an 'ACCESS DENIED!' error message.  Don't panic, this is by design for your safety and security. Just double check your work, make the necessary changes, and try again.
