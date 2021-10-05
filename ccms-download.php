@@ -780,10 +780,10 @@ Done.</pre>
 
 			/* Load the English version of the site if lng has not already been set START */
 			if(sessionStorage.length == 0){
-				setLng("https://custodiancms.org/downloader/en.php",lngXhr,"en");
+				setLng("https://custodiancms.org/cross-origin-resources/en.php",lngXhr,"en");
 			} else {
 				var tmp = sessionStorage.getItem("lng");
-				setLng("https://custodiancms.org/downloader/"+tmp+".php",lngXhr);
+				setLng("https://custodiancms.org/cross-origin-resources/"+tmp+".php",lngXhr);
 			}
 			/* Load the English version of the site if lng has not already been set END */
 
