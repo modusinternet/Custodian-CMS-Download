@@ -1,4 +1,4 @@
-![Custodian CMS Logo](custodiancms-logo-l.png)
+![Custodian CMS Logo](ccms-logo.png)
 <h1 align="center">Custodian CMS Download</h1>
 
 Some of the code for this utility comes from Marko Marković's project the [Simple PHP Git deploy script](https://github.com/markomarkovic/simple-php-git-deploy).
