@@ -192,6 +192,14 @@ header("Pragma: no-cache");
 				box-sizing:border-box
 			}
 
+			a,a:visited {
+				border:0px none;
+				outline:0px;
+				text-decoration-style:dotted
+			}
+
+			a:hover,a:focus{text-decoration-style:double}
+
 			html{font-size:62.5%}
 
 			body{
